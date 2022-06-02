@@ -675,10 +675,11 @@
 	pinctrl-0 = <&pinctrl_usdhc1>;
 	pinctrl-1 = <&pinctrl_usdhc1_100mhz>;
 	pinctrl-2 = <&pinctrl_usdhc1_200mhz>;
+	fsl,sdio-async-interrupt-enabled; 
 	keep-power-in-suspend;
 	non-removable;
-	pm-ignore-notify;
-	cap-power-off; 
+//	pm-ignore-notify;
+//	cap-power-off; 
 	mmc-pwrseq = <&usdhc1_pwrseq>;
 	status = "okay";
 	brcmf: bcrmf@1 {
